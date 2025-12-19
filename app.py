@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import urllib
 
-API_URL = "https://0twmzxyly2.execute-api.ap-southeast-2.amazonaws.com/stage1"  # replace with your API
+API_URL = st.secrets["api"]["url"] # replace with your API
 
 st.set_page_config(page_title="Committee Selector", layout="centered")
 
