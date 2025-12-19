@@ -9,7 +9,7 @@ st.set_page_config(page_title="Committee Selector", layout="centered")
 st.title("Form D Submission Link Generation")
 
 # ---------- Helper function ----------
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=60)
 def fetch_options(mode):
     payload = {
         "method": "retrieve",
